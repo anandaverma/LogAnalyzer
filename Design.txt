@@ -1,11 +1,12 @@
 log collector -> queue -> stream processor -> serach and visualization
-                                                      -> monitoring and alert engine
-                                                      -> mining (classification, clustering etc.)
+                                           -> monitoring and alert engine
+                                           -> mining (classification, clustering etc.)
 I am not here to re-invent the wheel. Most of the components mentioned above are well implemented already and if not I will implement that. Although making a correct choice is critical.
 
 1. Log Collector
   lumberjack
   log4j appenders
+  rsyslogd
   
 2. Queue
   redis
