@@ -1,4 +1,4 @@
-log collector -> queue -> stream processor -> serach and visualization
+log collector -> queue -> stream processor -> index, serach and visualization
                                            -> monitoring and alert engine
                                            -> mining (classification, clustering etc.)
 I am not here to re-invent the wheel. Most of the components mentioned above are well implemented already and if not I will implement that. Although making a correct choice is critical.
@@ -10,16 +10,18 @@ I am not here to re-invent the wheel. Most of the components mentioned above are
   
 2. Queue
   redis
+  ActiveMQ
+  Kafka
   
 3. Stream Processor
   storm 
-  cascading
-  cascalog
-  
-4. Search and Visualization
+
+4. Index, Search and Visualization
   elastic search
   kibana
   
 5. Monitoring and Alert
-
+  esmon
+  
 6. Mining
+  essmart
